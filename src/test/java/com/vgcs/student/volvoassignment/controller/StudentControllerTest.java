@@ -26,15 +26,14 @@ public class StudentControllerTest {
     @MockBean
     private StudentRepository repository;
 
-
     @BeforeAll
-    public void dataIntitializer(){
-
+    public static  void DATA_INITIALIZER(){
+        System.out.println("before all- has started");
     }
 
     @AfterAll
-    public void cleanUp(){
-
+    public static void CLEAN_UP(){
+        System.out.println(" CleanUp the database- has started");
 
     }
 
